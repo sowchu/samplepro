@@ -1,0 +1,90 @@
+<!--<!DOCTYPE html>
+<htm
+l lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda Management - Create/Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lambda Management</h1>
+        <nav>
+            <a href="index.html">Create/Update Lambda</a>
+            <a href="new11.html">View Role IDs</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="create">
+            <h2>Create Lambda</h2>
+            <form id="create-form">
+                <input type="text" id="create-function-name" placeholder="Function Name" required>
+                <button type="submit">Create Lambda</button>
+            </form>
+        </section>
+
+        <section id="update">
+            <h2>Update Lambda</h2>
+            <form id="update-form">
+                <input type="text" id="update-function-name" placeholder="Function Name" required>
+                <input type="text" id="update-role-name" placeholder="Role Name" required>
+                <button type="submit">Update Lambda</button>
+            </form>
+        </section>
+        <a href="https://19dit015.auth.ap-south-1.amazoncognito.com/login?client_id=76f4fvt655fgpgafjahsankvrg&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https%3A%2F%2Frushidonga.github.io%2Fcognito-auth%2Fget-in-touch.html">Demo</a>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda Management - Create/Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lambda Management</h1>
+        <nav>
+            <a href="index.html">Create/Update Lambda</a>
+            <a href="new11.html">View Role IDs</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="create">
+            <h2>Create Lambda</h2>
+            <form id="create-form">
+                <input type="text" id="create-function-name" placeholder="Function Name" required>
+                <button type="submit">Create Lambda</button>
+            </form>
+        </section>
+
+        <section id="update">
+            <h2>Update Lambda</h2>
+            <form id="update-form">
+                <input type="text" id="update-function-name" placeholder="Function Name" required>
+                <input type="text" id="update-role-name" placeholder="Role Name" required>
+                <button type="submit">Update Lambda</button>
+            </form>
+        </section>
+        <button id="demo-button">Sign Up</button>
+    </main>
+    <script src="main.js"></script>
+    <script>
+        const demoButton = document.getElementById('demo-button');
+        demoButton.addEventListener('click', () => {
+            window.location.href = 'https://sowchu.github.io/samplepro/new11.html#access_token=eyJraWQiOiJOUmFkZ0tPZVpFbm9Oakhya3hpVTRwRG1veEhTRGRmY3hmZG9qbFhoWlIwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI0NGM4MDRmOC1jMGQxLTcwODUtZmEyMi1mMTdmZWQyYzhiYWYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIHBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzE2NTE3MDQ5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hYlRUQmFxMzEiLCJleHAiOjE3MTY1MjA2NDksImlhdCI6MTcxNjUxNzA0OSwidmVyc2lvbiI6MiwianRpIjoiODE3NGYwNGItYzM0MC00MzgxLTgyNzYtMzdhMjU5M2FjNGQ0IiwiY2xpZW50X2lkIjoiNTk3N3EydDlpMjczMnMydHZyamN0Z3RjY3IiLCJ1c2VybmFtZSI6InNvdyJ9.EPcWHYjXdXfW2vfSWMFkrvqzdnpa7snQ3y76u51daIWe42O0yCfcZuBwPguIhV0IKnytK10rsVeWhX7_J8y0tDyMw33DuT2A6Sr-g3Geckuisy2D44kEOcI8-rxPpPcEmrsUntCEZeJCGZwTZPG3lHIl79nqPsV-5PMSM6gA0lELs7ZBImniLpLnNpWS0Fi8SNm35m8iAZGGpU4UBQ_FdP7tmAyh5qjZ3qQeOJFuCRxG6cbOGNRGYtDwyzdhTjEmZulpn_u2ETGpZgBlnzuMNsoodEdBUXfdPTAg-43nZlrqRP5dzXC8GgL194AnuV0IjBAN2WaMD67yUiFXf83ubw&id_token=eyJraWQiOiI2T3VZc3lYVU1vSnRnQUhXeGFUM010dEhIWFdsQUpnYjZvK0FsUGFOR1wvZz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiRmlvdXRGRzhmTXpDYjhrdnpmckpjZyIsInN1YiI6IjQ0YzgwNGY4LWMwZDEtNzA4NS1mYTIyLWYxN2ZlZDJjOGJhZiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hYlRUQmFxMzEiLCJjb2duaXRvOnVzZXJuYW1lIjoic293IiwiYXVkIjoiNTk3N3EydDlpMjczMnMydHZyamN0Z3RjY3IiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTcxNjUxNzA0OSwiZXhwIjoxNzE2NTIwNjQ5LCJpYXQiOjE3MTY1MTcwNDksImp0aSI6ImYzY2MwODM1LWZkOTYtNDFhNC04NjA4LWQ0YjdkODA3YWE4ZCIsImVtYWlsIjoic293ZGVlcEBhbWF6b24uY29tIn0.GiTvZA0QdiOgLKoPBFWB2LPlEbeKPGZdRxiR1wi58iyxavy3KnsVMkjpg2QEhWCgvh1oOVPEvfhIIO1pnAbR352zsK__r30hKTRbCopqqgPCKsylKGHtVPVZLLMAQipafgo_Kb1XBMAZm6mWQXjUjAOkZgjXRs6fro4mqwn-PEmUCyqYqSOBJzRHIZ_I7FVKvAOE7NUn87GXzDCwIRUeyxCO0t-K1PvAIQtsO98CxWygT21iXiQtD3_g7uvzJzMNYaEmkLFGIgWCt_mX3Fn4xluVdHSf7-KeNRGDYzlW2UGjEKKvZzn6HZpENAXI0azdPlPDJWGJkJ3m2GnUtPlqpQ&token_type=Bearer&expires_in=3600';
+        });
+    </script>
+</body>
+</html>
